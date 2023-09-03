@@ -8,7 +8,7 @@ import Rsvp from "./pages/Rsvp";
 export default function App() {
   const [isSongPlaying, setIsSongPlaying] = useState(false);
 
-  useEffect(() => {
+  /*useEffect(() => {
     // Use a setTimeout to start playing the song after 3 seconds
     const timer = setTimeout(() => {
       setIsSongPlaying(true);
@@ -16,7 +16,7 @@ export default function App() {
 
     // Clear the timer when the component unmounts
     return () => clearTimeout(timer);
-  }, []);
+  }, []);*/
 
   return (
     <BrowserRouter>
@@ -26,7 +26,7 @@ export default function App() {
           <Route path="rsvp" element={<Rsvp />} />
         </Route>
       </Routes>
-      <audio autoPlay={isSongPlaying}>
+      <audio controls autoPlay>
         <source src={WeddingMarch} type="audio/mpeg" />
       </audio>
     </BrowserRouter>
