@@ -10,6 +10,10 @@ export default function App() {
   // Create a state variable to manage the song playing status
   const [isSongPlaying, setIsSongPlaying] = useState(false);
 
+  <audio autoPlay={true}>
+        <source src={WeddingMarch} type="audio/mpeg" />
+  </audio>
+  
   useEffect(() => {
     // Use setTimeout to start playing the song after 3 seconds
     const timer = setTimeout(() => {

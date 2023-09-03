@@ -4,6 +4,10 @@ import React, { useState } from "react";
 function App() {
   const [choice, setChoice] = useState();
 
+  const handleSubmit = () => {
+    window.location.href = "https://drive.google.com/file/d/1y3oYXEjiW2zEmchNK0RQUxFY4APZ3IMk/view?usp=sharing";
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -14,7 +18,7 @@ function App() {
           <br />
           Sabtu, 2 September 2023
         </p>
-        <form>
+        <form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
           <label>
             Name :
             <input type="text" name="name" size={80} />
@@ -38,7 +42,7 @@ function App() {
             <textarea name="Doa" id="Doa" rows="7" cols="50"></textarea>
           </label>
           <br />
-          <button type="submit">SUBMIT</button>
+          <button onClick={handleSubmit} type="submit">SUBMIT</button>
         </form>
         <p className="column-layout">
           KELUARGA
