@@ -1,0 +1,61 @@
+.App {
+    text-align: center;
+  }
+  
+  .column-layout{
+    columns: 2;
+    column-gap: 100px;
+  }
+  
+  .rsvp{
+    text-align: center;
+    font-family: 'stencil', sans-serif;
+    font-size: xx-large;
+    font-weight: 300;
+    color: rgb(221, 115, 66);
+  }
+  
+  .App-header{
+    font-family: 'trispace', sans-serif;
+    font-size: larger;
+  }
+  
+  .tempat{
+    margin: 0;
+    padding: 12px;
+    font-weight: bolder;
+  }
+  
+  .nama{
+    color: rgb(226, 103, 46);
+  }
+  
+  .text1{
+    font-weight: bolder;
+  }
+  
+  /* Gaya untuk elemen input teks */
+  input[type="text"] {
+    margin-bottom: 10px;
+    border: 1px solid #e7d8cf;
+    background-color: #e7d8cf;
+  }
+  
+  /* Gaya untuk elemen textarea */
+  textarea {
+    margin-bottom: 10px;
+    border: 1px solid #e7d8cf;
+    background-color: #e7d8cf;
+  }
+  
+  /* Gaya untuk tombol submit */
+  button[type="submit"] {
+    background-color: #007bff00;
+    color: #000000;
+    padding: 5px 50px;
+    border: 5px solid #e7d8cf;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: 'trispace', sans-serif;
+  }
+  
