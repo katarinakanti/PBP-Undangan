@@ -29,9 +29,9 @@ export default function App() {
         </Route>
       </Routes>
 
-      {/* <audio autoPlay={true}>
+      <audio autoPlay={true}>
         <source src={WeddingMarch} type="audio/mpeg" />
-      </audio> */}
+      </audio>
     </BrowserRouter>
   );
 }
