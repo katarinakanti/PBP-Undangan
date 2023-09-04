@@ -34,7 +34,7 @@ function App() {
         <p className = "App-Isi">BULUSAN, SEMARANG, JAWA TENGAH 19051</p>
         <br/>
         <h1 className = "namaundangan">Kepada Bapak & Ibu </h1>
-        <p className = "namatamu">{data.nama}</p>
+        <p className="namatamu">{data.nama}</p>
       </section>
       
     </div>

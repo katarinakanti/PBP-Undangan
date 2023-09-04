@@ -5,7 +5,7 @@
   min-height: 100vmin;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url('/public/bg2.png');
+  background-image: url('/public/Bg2.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -67,6 +67,9 @@
   margin-bottom: 50px;
   font-size: calc(18px);
   font-family:'Kalam', cursive;
+  background: #ffefbe;
+  display: inline-block;
+  padding: .25em 0;
 }
 
 .App-link {
