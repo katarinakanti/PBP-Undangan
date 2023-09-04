@@ -58,16 +58,16 @@
 .namaundangan{
   margin-top: 0px;
   margin-bottom: 10px;
-  font-size: calc(15px);
+  font-size: calc(18px);
   font-family: 'trispace', sans-serif;
 }
 
 .namatamu{
   margin-top: 0px;
   margin-bottom: 50px;
-  font-size: calc(18px);
+  font-size: calc(15px);
   font-family:'Kalam', cursive;
-  background: #ffefbe;
+  background: #cfe69a;
   display: inline-block;
   padding: .25em 0;
 }
