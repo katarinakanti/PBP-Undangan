@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import WeddingMarch from "./component/WeddingMarch.mp3";
 import Undangan from "./pages/Undangan";
 import Rsvp from "./pages/Rsvp";
+import Bukti from "./pages/Bukti";
 
 export default function App() {
   const [isSongPlaying, setIsSongPlaying] = useState(false);
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/">
           <Route index element={<Undangan />} />
           <Route path="rsvp" element={<Rsvp />} />
+          <Route path="bukti" element={<Bukti />} />
         </Route>
       </Routes>
       <audio controls autoPlay>

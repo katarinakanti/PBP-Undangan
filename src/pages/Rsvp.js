@@ -7,8 +7,9 @@ function App() {
   const handleSubmit = () => {
     window.location.href = "https://drive.google.com/file/d/1y3oYXEjiW2zEmchNK0RQUxFY4APZ3IMk/view?usp=sharing";
   };
-
+  
   return (
+    
     <div className="App">
       <header className="App-header">
         <p className="tempat">SEMARANG, 28 AGUSTUS 2023</p>
