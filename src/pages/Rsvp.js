@@ -11,7 +11,6 @@ function App() {
   // };
   
   const [name, setName] = useState("");
-  const [doa, setDoa] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -19,8 +18,6 @@ function App() {
     navigate("/bukti", {
       state: {
         nama: name,
-        pilihan: choice,
-        doa: doa,
       },
     });
   };
