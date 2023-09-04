@@ -28,6 +28,8 @@ function App() {
         <p className = "App-Isi">GEDUNG FOREVER</p>
         <p className = "App-Isi">JALAN PIPOP KESAYANGAN BUNDA NO. 93 RT/RW 03/05,</p>
         <p className = "App-Isi">BULUSAN, SEMARANG, JAWA TENGAH 19051</p>
+        <br/>
+        <h1 className = "namaundangan">Kepada Bpk. & Ibu </h1>
 
       </section>
       
