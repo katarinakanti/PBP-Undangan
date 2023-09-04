@@ -48,7 +48,7 @@
   }
   
   .rsvp{
-    text-align: right;
+    text-align: center; 
     font-family: 'trispace', sans-serif;
     font-size: calc(20px);
     margin-right: 50px;

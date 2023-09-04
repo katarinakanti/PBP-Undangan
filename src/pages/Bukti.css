@@ -5,7 +5,7 @@
   min-height: 100vmin;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url('/public/bg2.png');
+  background-image: url('/public/Bg2.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -61,6 +61,14 @@
   font-size: calc(12px);
   font-family: 'trispace', sans-serif;
 }
+
+.namatamu{
+  margin-top: -10px;
+  margin-bottom: 50px;
+  font-size: calc(24px);
+  font-family: 'trispace', sans-serif;
+}
+
 .App-link {
   color: #61dafb;
 }

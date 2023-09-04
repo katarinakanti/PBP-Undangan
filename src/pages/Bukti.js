@@ -2,8 +2,12 @@ import './Bukti.css';
 import { Component } from 'react';
 import kucing from "../component/kucing.png";
 // import bungakucing from './component/bungakucing.png';
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
+  const data = location.state || {};
+
   return (
     <div className = "Bukti">
       <header>
@@ -30,7 +34,7 @@ function App() {
         <p className = "App-Isi">BULUSAN, SEMARANG, JAWA TENGAH 19051</p>
         <br/>
         <h1 className = "namaundangan">Kepada Bpk. & Ibu </h1>
-
+        <p className="namatamu">{data.nama}</p>
       </section>
       
     </div>

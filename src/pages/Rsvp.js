@@ -1,15 +1,31 @@
 import "./Rsvp.css";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function App() {
   const [choice, setChoice] = useState();
 
-  const handleSubmit = () => {
-    window.location.href = "https://drive.google.com/file/d/1y3oYXEjiW2zEmchNK0RQUxFY4APZ3IMk/view?usp=sharing";
-  };
+  // const handleSubmit = () => {
+  //   window.location.href = "https://drive.google.com/file/d/1y3oYXEjiW2zEmchNK0RQUxFY4APZ3IMk/view?usp=sharing";
+  // };
   
+  const [name, setName] = useState("");
+  const [doa, setDoa] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate("/bukti", {
+      state: {
+        nama: name,
+        pilihan: choice,
+        doa: doa,
+      },
+    });
+  };
+
   return (
-    
     <div className="App">
       <header className="App-header">
         <p className="tempat">SEMARANG, 28 AGUSTUS 2023</p>
@@ -19,10 +35,15 @@ function App() {
           <br />
           Sabtu, 2 September 2023
         </p>
-        <form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
+        <form onSubmit={handleSubmit}> 
           <label>
             Name :
-            <input type="text" name="name" size={80} />
+            <input 
+              type="text" 
+              name="name" 
+              size={80}
+              value={name}
+              onChange={(e) => setName(e.target.value)} />
             <p>
               <input
                 type="radio"
@@ -42,8 +63,10 @@ function App() {
             <p className="text1"> Berikan Doa untuk Pipop & Abi </p>
             <textarea name="Doa" id="Doa" rows="7" cols="50"></textarea>
           </label>
-          <br />
-          <button onClick={handleSubmit} type="submit">SUBMIT</button>
+          <br /> 
+          <button type="submit">SUBMIT
+            {/* <Link to="/bukti" >SUBMIT</Link> */}
+          </button>
         </form>
         <p className="column-layout">
           KELUARGA

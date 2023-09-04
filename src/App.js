@@ -6,7 +6,7 @@ import Undangan from "./pages/Undangan";
 import Rsvp from "./pages/Rsvp";
 import Bukti from "./pages/Bukti";
 
-export default function App() {
+export default function App({name}) {
   const [isSongPlaying, setIsSongPlaying] = useState(false);
 
   /*useEffect(() => {
@@ -25,7 +25,7 @@ export default function App() {
         <Route path="/">
           <Route index element={<Undangan />} />
           <Route path="rsvp" element={<Rsvp />} />
-          <Route path="bukti" element={<Bukti />} />
+          <Route path="bukti" element={<Bukti name={name}/>} />
         </Route>
       </Routes>
       <audio controls autoPlay>
