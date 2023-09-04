@@ -9,12 +9,38 @@ function App() {
   // const handleSubmit = () => {
   //   window.location.href = "https://drive.google.com/file/d/1y3oYXEjiW2zEmchNK0RQUxFY4APZ3IMk/view?usp=sharing";
   // };
-  
+
   const [name, setName] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const trimmedName = name.trim();
+    if (name.trim() === "") {
+      alert("Tolong isi nama tamu.");
+      return;
+    }
+    if (!/^[A-Za-z\s]+$/.test(trimmedName)) {
+      alert("Nama hanya tidak boleh menggunakan angka ataupun simbol");
+      return;
+    }
+
+    if (trimmedName.length > 30) {
+      alert("Nama tidak boleh melebihi 30 karakter.");
+      return;
+    }
+
+    const doa = document.getElementById("Doa").value.trim();
+    if (doa === "") {
+      alert("Mohon isi doa Anda untuk pengantin dan keluarga");
+      return;
+    }
+    if (doa.length > 100) {
+      alert("Doa tidak boleh melebihi 100 karakter");
+      return;
+    }
+
     navigate("/bukti", {
       state: {
         nama: name,
@@ -32,15 +58,16 @@ function App() {
           <br />
           Sabtu, 2 September 2023
         </p>
-        <form onSubmit={handleSubmit}> 
+        <form onSubmit={handleSubmit}>
           <label>
             Name :
-            <input 
-              type="text" 
-              name="name" 
+            <input
+              type="text"
+              name="name"
               size={80}
               value={name}
-              onChange={(e) => setName(e.target.value)} />
+              onChange={(e) => setName(e.target.value)}
+            />
             <p>
               <input
                 type="radio"
@@ -60,8 +87,9 @@ function App() {
             <p className="text1"> Berikan Doa untuk Pipop & Cuyung </p>
             <textarea name="Doa" id="Doa" rows="7" cols="50"></textarea>
           </label>
-          <br /> 
-          <button type="submit">SUBMIT
+          <br />
+          <button type="submit">
+            SUBMIT
             {/* <Link to="/bukti" >SUBMIT</Link> */}
           </button>
         </form>
