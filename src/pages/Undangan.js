@@ -27,7 +27,7 @@ function App() {
 
         <p className="nama">PIPOP</p>
         <p className="nama">&</p>
-        <p className="nama">ABI</p>
+        <p className="nama">CUYUNG</p>
 
         <h3 className="tanggal">SABTU, 2 SEPTEMBER 2023</h3>
         <h3 className="waktu">19:00 WIB</h3>

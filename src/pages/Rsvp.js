@@ -57,7 +57,7 @@ function App() {
               />{" "}
               Menolak Dengan Bahagia{" "}
             </p>
-            <p className="text1"> Berikan Doa untuk Pipop & Abi </p>
+            <p className="text1"> Berikan Doa untuk Pipop & Cuyung </p>
             <textarea name="Doa" id="Doa" rows="7" cols="50"></textarea>
           </label>
           <br /> 
@@ -68,7 +68,7 @@ function App() {
         <p className="column-layout">
           KELUARGA
           <br />
-          BPK. VARREL
+          BPK. ABIE
           <br />
           IBU ABIGAIL METANOIA
           <p className="nama">PIPOP</p>
